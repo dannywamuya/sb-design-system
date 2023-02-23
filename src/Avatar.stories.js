@@ -13,6 +13,16 @@ export default {
       options: ["tiny", "small", "medium", "large"],
     },
   },
+  parameters: {
+    componentSubtitle:
+      "Displays an image that represents a user or organization",
+    docs: {
+      extractComponentDescription: () =>
+        ` 
+        - Use an avatar for attributing actions or content to specific users. 
+        - The user's name should always be present when using Avatar – either printed beside the avatar or in a tooltip.`,
+    },
+  },
 };
 
 export const Standard = (args) => <Avatar {...args} />;
